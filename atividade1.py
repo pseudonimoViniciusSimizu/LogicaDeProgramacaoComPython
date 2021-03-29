@@ -6,6 +6,7 @@ def converte_entrada (texto_dos_numeros):
     x = int(x)
     lista.append (x)
   return lista
+
   
 def processar_numeros (lista):
   i = 0
@@ -15,11 +16,13 @@ def processar_numeros (lista):
     i += 1
   return (soma, i)
 
+
 def main (lista_dos_numeros):
   soma = soma_e_contagem [0]
   contagem = soma_e_contagem [1]
   media = soma / contagem
   return media
+
 
 while input != "a" or "A" or "aloha":
   lista = converte_entrada (input (f"Coloque Sua Entrada Aqui: "))
