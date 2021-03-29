@@ -21,8 +21,10 @@ def main (lista_dos_numeros):
   media = soma / contagem
   return media
 
-lista = converte_entrada (input (f"Coloque A Sua Entrada Aqui "))
-soma_e_contagem = processar_numeros (lista)
-media = main (lista)
-
-print (media)
+while input != "a" or "A":
+  lista = converte_entrada (input (f"Coloque Sua Entrada Aqui "))
+  soma_e_contagem = processar_numeros (lista)
+  media = main (lista)
+  print (media)
+  input (f"Envie 'A' para reiniciar ")
+  print ()
