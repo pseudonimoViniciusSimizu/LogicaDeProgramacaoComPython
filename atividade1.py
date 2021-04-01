@@ -3,8 +3,7 @@ def converte_entrada (texto_dos_numeros):
   texto = texto_dos_numeros
   y = (texto.split(' '))
   for x in y:
-    x = int(x)
-    lista.append (x)
+    lista.append (int(x))
   return lista
 
   
