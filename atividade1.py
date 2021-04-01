@@ -9,12 +9,10 @@ def converte_entrada (texto_dos_numeros):
 
   
 def processar_numeros (lista):
-  i = 0
   soma = 0
-  while len(lista) > i:
-    soma += lista [i]
-    i += 1
-  return (soma, i)
+  for x in lista:
+    soma += x
+  return (soma, len(lista))
 
 
 def main (lista_dos_numeros):
