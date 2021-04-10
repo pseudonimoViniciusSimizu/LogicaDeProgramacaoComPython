@@ -20,9 +20,9 @@ def numero_de_numeros (lista):
 
 
 def menu ():
-    print("Envie 'A' para imprimir 'PSG' \nEnvie 'B' para imprimir 'BAYERN' \nRetorne 'D' para encerrar \n")
+    print("Envie 'A' para imprimir 'PSG' \nEnvie 'B' para imprimir 'BAYERN' \nRetorne 'D' ou 'aloha' para encerrar \n")
     opcao = input("Digite sua opção: ")
-    while opcao != 'D' or opcao != 'd':
+    while opcao != 'D' or opcao != 'd' or opcao != 'aloha':
         if opcao == 'A' or opcao == 'a':
             print("PSG")
         elif opcao == 'B' or opcao == 'b':
