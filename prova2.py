@@ -36,7 +36,7 @@ def exercicio4 (media_dos_alunos):
         if media < 7:
             medias_inferiores += 1
     if medias_inferiores / len (media_dos_alunos) < 0.25:
-        return ("Professor Coxa")
+        return ("Professor Coxa")  #Ou professor mano, não sei se coxa é bom ou ruim, entao coloquei assim mesmo
     else:
         return ("Professor Padrão")
 
