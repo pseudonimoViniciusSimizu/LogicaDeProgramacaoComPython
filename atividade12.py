@@ -21,30 +21,19 @@ def exer4():
 
 
 def exer5 (lista_numeros):
-    pairs_list = []
-    for number in lista_numeros:
-        if number % 2 == 0:
-            pairs_list.append(number)
-    print(pairs_list)
+    print( list ( filter ( lambda x: x % 2 == 0, lista_numeros )))
 
 
 def exer6 (lista_numeros):
-    list_min_4 = []
-    for number in lista_numeros:
-        if number >= 4:
-            list_min_4.append(number)
-    print(sum(list_min_4))
+    print( sum ( list ( filter ( lambda x: x >= 4, lista_numeros))))
 
 
 def exer7 (lista_numeros):
-    print(sum(lista_numeros) / len(lista_numeros))
+    print( sum ( lista_numeros ) / len ( lista_numeros ))
 
 
 def exer8 (lista_numeros):
-    text_list = []
-    for number in lista_numeros:
-        text_list.append( str ( number))
-    print ("|".join(text_list))
+    print( "|".join ( list ( map ( lambda x: str (x), lista_numeros ))))
 
 
 def exer9 (lista_numeros):
@@ -56,4 +45,22 @@ def exer10 (lista_numeros):
     disordened_list = sorted( lista_numeros , reverse = True )
     # preciso nem escrever né :)
 
-lista_numeros = [3, 8, 9, 1, 0, 2]
+
+def exer11 (segunda_lista_numeros):
+    print( segunda_lista_numeros [:] )
+
+
+def exer12 (segunda_lista_numeros):
+    print( segunda_lista_numeros [ :3 ])
+
+
+def exer13 (segunda_lista_numeros):
+    print( sorted (segunda_lista_numeros) [ :2 ])
+
+
+def exer14 (segunda_lista_numeros):
+    print( sorted ( segunda_lista_numeros, reverse = True )[ :2 ])
+
+
+lista_numeros = [ 3, 8, 9, 1, 0, 2 ]
+segunda_lista_numeros = [ 4, 5, 2, 0, 9 ]
