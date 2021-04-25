@@ -76,5 +76,14 @@ def exer16 ():
 def exer17 ():
     print( list ( randint( 0, 100) for x in range(19) ))
 
+
+def exer18 ():
+    converted_list = ( list ( x.upper() for x in [ "alo", "Alo", "aLO", "alO" ]))
+
+
+def exer19 ():
+    converted_list = ( list ( x.lower() for x in [ "alo", "Alo", "aLO", "alO" ]))
+    
+
 lista_numeros = [ 3, 8, 9, 1, 0, 2 ]
 segunda_lista_numeros = [ 4, 5, 2, 0, 9 ]
