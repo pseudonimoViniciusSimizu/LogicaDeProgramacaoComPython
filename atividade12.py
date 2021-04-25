@@ -1,3 +1,6 @@
+from random import randint
+
+
 def exer1():
     numbers_list = []
     while len(numbers_list) < 3:
@@ -61,6 +64,17 @@ def exer13 (segunda_lista_numeros):
 def exer14 (segunda_lista_numeros):
     print( sorted ( segunda_lista_numeros, reverse = True )[ :2 ])
 
+
+def exer15 ():
+    print ( list ( x+1 for x in range(10) ))
+
+
+def exer16 ():
+    print ( list ( x * 2 for x in range(11) ))
+
+
+def exer17 ():
+    print( list ( randint( 0, 100) for x in range(19) ))
 
 lista_numeros = [ 3, 8, 9, 1, 0, 2 ]
 segunda_lista_numeros = [ 4, 5, 2, 0, 9 ]
