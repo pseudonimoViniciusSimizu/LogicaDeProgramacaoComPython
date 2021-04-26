@@ -82,7 +82,7 @@ def exer18 ():
 
 
 def exer19 ():
-    converted_list = ( list ( x.lower() for x in [ "alo", "Alo", "aLO", "alO" ]))
+    converted_list = ( list ( x.lower().strip() for x in [ "alo", "Alo", "aLO", "alO" ]))
     
 
 lista_numeros = [ 3, 8, 9, 1, 0, 2 ]
