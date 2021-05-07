@@ -33,5 +33,5 @@ def exer5 ():
 
 def exer6 ():
     dicionarios = json.loads ( requests.get ("https://jsonplaceholder.typicode.com/posts").text )
-    for discionario in dicionarios:
-        print ( discionario ["body"] + "\n" )
+    for dicionario in dicionarios:
+        print ( dicionario ["body"] + "\n" )
