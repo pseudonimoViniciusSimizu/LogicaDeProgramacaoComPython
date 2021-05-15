@@ -126,7 +126,7 @@ def exer5():
 def exer6():
 
     # Imprime a média das notas de João
-    print("A média da nota de {} é igual a {:.2f}".format("Joao,3,4,8,5,4,10".split(',')[0], sum(map(lambda x: int(x), "Joao,3,4,8,5,4,10".split(',')[1:])) / len("Joao,3,4,8,5,4,10".split(',')[1:])))
+    print("A média da nota de {} é igual a {:.2f}".format("Joao,3,4,8,5,4,10".split(',')[0], sum(map(lambda x: int(x), "Joao,3,4,8,5,4,10".split(',')[1:])) / 6))
 
 
 # Lista em uma linha
