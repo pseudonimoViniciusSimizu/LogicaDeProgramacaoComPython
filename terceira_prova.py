@@ -31,7 +31,7 @@ def saida_txt():
     lista = list(map(lambda x: int(x), lista))
     saida.append(min(lista))
     saida.append(max(lista))
-    saida.append(sum(lista) / len(lista))
+    saida.append(calcula_media(lista))
     file.close()
   with open("saida.txt", 'w') as file:
     file.write("Minimo\t\t{}\n".format(saida[0]))
