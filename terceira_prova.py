@@ -18,25 +18,20 @@ def calcula_media(lista):
 def maior_media(lista):
   media1 = calcula_media(lista[:3])
   media2 = calcula_media(lista[-3:])
-  if media1 > media2:
-    return media1
-  else:
-    return media2
+  return calcula_max(media1, media2)
   
   
 def saida_txt():
   with open("./input.txt", 'r') as file:
-    saida = []
-    lista = file.readlines()
-    lista = list(map(lambda x: int(x), lista))
-    saida.append(min(lista))
-    saida.append(max(lista))
-    saida.append(calcula_media(lista))
+    lista = list(map(lambda x: int(x), file.readlines()))
+    minimo = min(lista)
+    maximo = calcula_max(lista)
+    media = calcula_media(lista)
     file.close()
   with open("saida.txt", 'w') as file:
-    file.write("Minimo\t\t{}\n".format(saida[0]))
-    file.write("Maximo\t\t{}\n".format(saida[1]))
-    file.write("Media\t\t{}".format(saida[2]))
+    file.write("Minimo\t\t{}\n".format(minimo))
+    file.write("Maximo\t\t{}\n".format(maximo))
+    file.write("Media\t\t{}".format(media))
     file.close()
     
     
